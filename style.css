@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right:10px ;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+aside{
+    transition:  1s;
+    position: relative;
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+    width:410px;
+    height: 100%;
+    background-color:whitesmoke;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin:0px 10px;
+}
+.logo img{
+    height:40px;
+}
+.logo i{
+    font-size: 1.7em;
+    font-weight: 30em;
+    border:none;
+    color: rgb(183, 46, 46);
+    transition: 0.4s;
+}
+.logo i:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    margin: 15px 0px;
+    padding: 0;
+}
+nav ul li{
+    padding:13px;
+    margin: 0px;
+    transition:0.4s;
+    font-size: 1.5em;
+}
+nav a{
+    color:rgb(58, 75, 87)
+}
+nav ul li:hover{
+    background-color: rgb(9, 176, 237);
+    padding-left: 17px;
+    cursor: pointer;
+}
+.links{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links ul{
+   display: flex;
+   justify-content: space-between;
+}
+.links ul a{
+    font-size: 1.5em;
+    padding: 0;
+    margin: 10;
+    color:rgb(64, 175, 231) ;
+}
+.links ul a:hover{
+    color:rgb(9, 125, 164) ;
+}
+
+button{
+    height: fit-content;
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+button i{
+    background-color: transparent;
+    animation: buttonAnimation infinite 1s alternate ease-in-out;
+    color:rgb(64, 175, 231) ;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+button i:hover{
+    color:rgb(13, 140, 195)
+}
+.clear{
+    display:none;
+}
+@keyframes buttonAnimation {
+    from{
+        font-size: 20px
+    }
+    to{
+        font-size:50px;
+    }
+}
+@media (max-width:700px) {
+    body{
+        padding: 0px;
+    }
+    .navlength{
+        width:100%;
+    }
+    .close{
+        display: none;
+    }
+}
